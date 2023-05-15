@@ -44,7 +44,6 @@ export class Address{
     })
    }
    static listToHTML(list){
-    console.log(list);
     return list.length ? 
                     `<ol>${list.map(item => `<li>${item.street}_${item.build}</li>`)
                     .join('')}</ol>`
